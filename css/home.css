@@ -11,15 +11,6 @@
   width: 250px;
   height: 260px;
   margin-top: 1rem;
-  animation-name: product-image;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
-
-/* Animation for product image */
-@keyframes product-image {
- from {opacity: 0}
- to {opacity: 1};
 }
 
 /* Displaying all elements in .product-header as a column.
