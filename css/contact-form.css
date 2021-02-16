@@ -137,4 +137,14 @@
   #modal-form {
     width: 70%;
   }
+
+  #contact-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  #contact-icon img {
+    width: 30px;
+    height: 30px;
+  }
 }
