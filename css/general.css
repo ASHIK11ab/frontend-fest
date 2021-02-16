@@ -83,6 +83,49 @@
    hue-rotate(173deg) brightness(102%) contrast(105%);
 }
 
+/* Positioning all Social links fixed on right side of the window */
+.social-links {
+  position: fixed;
+  top: 20%;
+  right: 0px;
+}
+
+/* Displaying all Links as a column */
+.social-links ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+/* Giving a fixed width and height for each link container */
+.social-links li {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  /* Flex is used to center icons inside the li */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding: .5rem;
+}
+
+/* Giving a width and height to each social link icon */
+.social-links img {
+  width: 30px;
+  height: 30px;
+  /* Filtering icon color to white */
+  filter: invert(100%) sepia(14%) saturate(326%)
+   hue-rotate(28deg) brightness(112%) contrast(100%);
+}
+
+/* Changing icon colour on hover state */
+.social-links a:hover {
+  filter: invert(50%) sepia(0%) saturate(40%)
+   hue-rotate(176deg) brightness(105%) contrast(113%);
+}
+
 /* Media Query to create responsive navbar
    Positions .navbar-nav at bottom for better UX */
 @media (max-width: 600px) {
