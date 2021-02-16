@@ -1,11 +1,12 @@
+/* Styling contact icon to be fixed */
 #contact-icon {
   position: fixed;
   top: 20%;
   left: 0;
   width: 40px;
   height: 40px;
-  background: #00a8ff;
-  border: 1.5px solid #ddd;
+  background: #fff;
+  border: 2px solid #ddd;
   border-radius: 8px;
   padding: .5rem;
   display: flex;
@@ -13,17 +14,17 @@
   justify-content: center;
 }
 
+/* Setting width and height of contact icon */
 #contact-icon img {
   width: 35px;
   height: 35px;
-  filter: invert(50%) sepia(0%) saturate(40%)
-   hue-rotate(176deg) brightness(105%) contrast(113%);
 }
 
 #contact-icon:hover {
   cursor: pointer;
 }
 
+/* To give dark background when form is displayed */
 .bg-dark-viewport {
   position: fixed;
   top: 0;
@@ -33,6 +34,7 @@
   background: rgba(0, 0, 0, .8);
 }
 
+/* Hiding form by default */
 #modal-form {
   position: absolute;
   left: 50%;
@@ -56,11 +58,14 @@
   font-size: 1.1rem;
 }
 
+/* Highlighting * (mandatory) */
 #modal-form sup {
   color: #ff0000;
   font-weight: bold;
+  font-size: 1rem;
 }
 
+/* Positioning close button in top right corner of form */
 #modal-form span {
   position: absolute;
   right: 20px;
@@ -76,6 +81,7 @@
   cursor: pointer;
 }
 
+/* Displaying input field as 100% */
 #modal-form input {
   width: 100%;
   border: 3px solid #ddd;
@@ -86,6 +92,7 @@
   border-radius: 8px;
 }
 
+/* Highlighting input field on focus */
 #modal-form input:focus {
   border: 3px solid #7d5fff;
   outline: none;
@@ -118,8 +125,16 @@
   border: 3px solid #ddd;
 }
 
+/* Highlighting textarea field on focus */
 #modal-form textarea:focus {
   border: 3px solid #7d5fff;
   transition: border .4s;
   outline: none;
+}
+
+/* Reducing size of form on small devices */
+@media (max-width: 600px) {
+  #modal-form {
+    width: 70%;
+  }
 }

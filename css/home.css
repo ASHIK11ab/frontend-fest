@@ -80,4 +80,11 @@ and vertically */
   .product-video-section iframe {
     width: 100%;
   }
+
+  /* Changing button from fill mode to filled button
+  on small devices */
+  .product-header button {
+    background: #00a8ff;
+    color: #fff;
+  }
 }
