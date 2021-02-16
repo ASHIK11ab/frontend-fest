@@ -6,9 +6,17 @@
 
 /* Outer container which holds all the navigation elements */
 .navbar {
+  background: #fff;
+  position: fixed;
+  top: 0;
   width: 100%;
   padding: .2rem;
   border-bottom: 1.5px solid #bbb;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
 }
 
 /* Displaying all the elements in navigation bar in single row */
@@ -133,10 +141,11 @@
 @media (max-width: 600px) {
 
   .navbar {
-    padding: .5rem 0;
+    padding: .8rem 0;
   }
 
   .navbar-nav {
+    background: #fff;
     position: fixed;
     bottom: 0px;
     margin-left: -3rem;

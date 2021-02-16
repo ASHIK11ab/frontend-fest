@@ -1,0 +1,76 @@
+/* Displaying product image and header content as a row */
+#home-section {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#home-section img {
+  width: 250px;
+  height: 260px;
+  margin-top: 1rem;
+  animation-name: product-image;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+/* Animation for product image */
+@keyframes product-image {
+ from {opacity: 0}
+ to {opacity: 1};
+}
+
+/* Displaying all elements in .product-header as a column.
+Aligning elements in .product-header to center in both horizontally
+and vertically */
+#home-section .product-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+/* To fix too much space between the parent element */
+.product-header h3 {
+  margin-top: -.8rem;
+}
+
+/* Styling the button */
+.product-header button {
+  width: 150px;
+  padding: .8rem;
+  text-align: center;
+  background: #fff;
+  color: #00a8ff;
+  border-radius: 8px;
+  border: 3px solid #00a8ff;
+  font-size: 1rem;
+}
+
+/* Changing button to a filled button on hover state */
+.product-header button:hover {
+  background: #3fb8f5;
+  color: #fff;
+  cursor: pointer;
+  transition: background .7s;
+}
+
+/* Displaying the .product-video-section as a column */
+.product-video-section {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Stying the iframe */
+.product-video-section iframe {
+  width: 500px;
+  height: 250px;
+  border: 0;
+  border-radius: 8px;
+}
