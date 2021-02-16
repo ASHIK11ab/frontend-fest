@@ -1,0 +1,117 @@
+* {
+  font-family: Helvetica, sans-serif;
+}
+
+/* Outer container which holds all the navigation elements */
+.navbar {
+  width: 100%;
+  padding: .2rem;
+  border-bottom: 1.5px solid #bbb;
+}
+
+/* Displaying all the elements in navigation bar in single row */
+.navbar .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+/* Styling the container which contains brand logo and text to
+  display in single row */
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Styling the brand text */
+.brand span {
+  letter-spacing: 5px;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 540;
+}
+
+/* navbar-nav is the inner container which contains the actual links */
+.navbar-nav {
+  margin-left: 1rem;
+}
+
+/* Displaying all li items in single row */
+.navbar-nav ul{
+  list-style: none;
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+/* Removing default styling of anchor tag */
+.navbar-nav a {
+  text-decoration: none;
+  color: #666;
+}
+
+.navbar-nav li:not(:first-child) {
+  margin-left: 2rem;
+}
+
+/* Displaying nav-item-group as column.
+   nav-item-group contains the icon and navigation text */
+.navbar-nav .nav-item-group {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.nav-item-group img {
+  width: 30px;
+  height: 30px;
+  filter: invert(50%) sepia(0%) saturate(40%)
+   hue-rotate(176deg) brightness(105%) contrast(113%);
+  /* Hiding the nav icon on large screen devices */
+  display: none;
+}
+
+/* Changing the colour of li elements on hover state */
+.navbar-nav ul li:hover {
+  cursor: pointer;
+  filter: invert(47%) sepia(100%) saturate(2069%)
+   hue-rotate(173deg) brightness(102%) contrast(105%);
+}
+
+/* Media Query to create responsive navbar
+   Positions .navbar-nav at bottom for better UX */
+@media (max-width: 600px) {
+
+  .navbar {
+    padding: .5rem 0;
+  }
+
+  .navbar-nav {
+    position: fixed;
+    bottom: 0px;
+    margin-left: -3rem;
+    width: 100%;
+    border-top: 1.5px solid #ddd;
+  }
+
+  /* Spacing out the li elments equally */
+  .navbar-nav ul {
+    justify-content: space-around;
+  }
+
+  /* Displaying the nav icon on small screen devices */
+  .nav-item-group img{
+    display: block;
+  }
+
+  /* Reducing nav link text font size */
+  .nav-item-group span {
+    font-size: 1rem;
+    margin-top: 3px;
+  }
+}
