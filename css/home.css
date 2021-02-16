@@ -74,3 +74,10 @@ and vertically */
   border: 0;
   border-radius: 8px;
 }
+
+/* Reducing size of iframe on small devices */
+@media (max-width: 600px) {
+  .product-video-section iframe {
+    width: 100%;
+  }
+}

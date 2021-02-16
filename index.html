@@ -7,6 +7,7 @@
   <title>Titan Edge | A Titan Product</title>
   <link rel="stylesheet" href="/css/general.css">
   <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/contact-form.css">
 </head>
 <body>
   <header class="navbar">
@@ -78,5 +79,29 @@
       \encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <!-- End of product video -->
+  <div id="contact-icon">
+    <img src="/icons/message-icon.svg" alt="Message icon">
+  </div>
+  <div id="modal">
+    <form action="#" id="modal-form" class="closed">
+      <span id="close-btn">&times;</span>
+      <h2>Get in touch with us</h2>
+
+      <label>Name:</label><sup>*</sup>
+      <input type="text" required>
+
+      <label>Mobile:</label><sup>*</sup>
+      <input type="number" required>
+
+      <label>Email:</label><sup>*</sup>
+      <input type="email" required>
+
+      <label>Message</label><sup>*</sup>
+      <textarea required></textarea>
+
+      <button>Send Message</button>
+    </form>
+  </div>
+  <script src="/js/contact-form.js"></script>
 </body>
 </html>
