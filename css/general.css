@@ -4,6 +4,10 @@
   font-family: Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Outer container which holds all the navigation elements */
 .navbar {
   background: #fff;
