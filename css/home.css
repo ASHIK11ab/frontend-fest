@@ -11,6 +11,7 @@
   width: 250px;
   height: 260px;
   margin-top: 1rem;
+  margin-right: 2rem;
 }
 
 /* Displaying all elements in .product-header as a column.
@@ -22,7 +23,6 @@ and vertically */
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
-  margin-left: 2rem;
 }
 
 /* To fix too much space between the parent element */
